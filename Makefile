@@ -12,7 +12,7 @@ LIB 		= lib
 
 SUBDIR 		= -I$(SRC)/ -I$(DEP)/ -L$(LIB)/
 
-SOURCE 		:= $(wildcard $(SRC)/*.cpp)
+SOURCE 		:= $(wildcard $(SRC)/*/*.cpp)
 OBJECTS 	:= $(patsubst $(SRC)/%.cpp, $(OBJ)/%.o, $(SOURCE))
 
 bin/Program: $(OBJECTS)
